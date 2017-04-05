@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="lab.wasikrafal.calcbmi.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <TextView
+        android:id="@+id/tv_switch"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/my_toolbar"
+        android:text="@string/sw_units"
+        android:textSize="20sp"/>
+
+
+    <Switch
+        android:id="@+id/sw_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_below="@id/my_toolbar"
+        android:layout_toEndOf="@id/tv_switch"
+        android:gravity="end"/>
+
+    <TextView
+        android:id="@+id/tv_mass"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_below = "@id/sw_units"
+        android:text="@string/wp_wag"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_get_mass"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tv_mass"
+        android:layout_below = "@id/sw_units"
+        android:gravity="end"
+        android:hint="@string/kg"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_get_mass"
+        android:gravity="center_vertical"
+        android:text="@string/wp_wys"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/et_get_height"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below = "@id/et_get_mass"
+        android:layout_toEndOf="@id/tv_height"
+        android:hint="@string/m"
+        android:gravity = "end"
+        android:minWidth="100dp"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/but_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/et_get_height"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/policz"/>
+
+    <TextView
+        android:id="@+id/tv_bmi_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/but_count"
+        android:text="@string/pod_bmi"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_bmi_com"
+        android:text="@string/no_data"
+        android:freezesText="true"
+        android:gravity="center"
+        android:textSize="36sp"/>
+
+</RelativeLayout>
+
+</ScrollView>

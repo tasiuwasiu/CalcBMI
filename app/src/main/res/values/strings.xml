@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CalcBMI</string>
+    <string name="wp_wag">Enter your weight:</string>
+    <string name="wp_wys">Enter your height:</string>
+    <string name="pod_bmi">Your BMI is:</string>
+    <string name="policz">Count BMI</string>
+    <string name="no_data">Enter data!</string>
+    <string name="kg">kg</string>
+    <string name="m">m</string>
+    <string name="lb">Lb</string>
+    <string name="in">In</string>
+    <string name="sw_units">Change Units</string>
+    <string name="action_save">Save</string>
+    <string name="action_share">Share</string>
+    <string name="author">About Author</string>
+    <string name="author_data">Rafał Wasik</string>
+    <string name="back">Back</string>
+    <string name="share_bmi">My BMI is:</string>
+    <string name="bmi">BMI</string>
+    <string name="color">Color</string>
+    <string name="h">h</string>
+    <string name="imp">imperial</string>
+    <string name="saved">Values saved!</string>
+    <string name="loaded">Values loaded!</string>
+
+</resources>
